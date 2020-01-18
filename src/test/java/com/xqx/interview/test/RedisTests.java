@@ -8,6 +8,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -19,6 +22,9 @@ public class RedisTests {
     public void testInsertRedis(){
         redisUtil.set("2020:1:5:test","2",0);
         redisUtil.get("2020:1:5:test",0);
+        HashMap hashMap;
+        HashSet hashSet;
+        Hashtable hashtable;
     }
 
 
